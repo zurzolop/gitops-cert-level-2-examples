@@ -22,3 +22,8 @@ spec:
     syncOptions:
       - CreateNamespace=true  
    
+ ignoreDifferences:
+  - annotations:
+    - creation
+  - data:
+    - my-password
