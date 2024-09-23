@@ -23,7 +23,11 @@ spec:
       - CreateNamespace=true  
    
  ignoreDifferences:
-  - annotations:
-    - creation
-  - data:
+ - group: apps
+   kind: Deployment
+   annotations: 
+     - creation
+ - group: apps
+   kind: Secret
+   data:
     - my-password
